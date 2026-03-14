@@ -1,0 +1,16 @@
+{
+  "id": "lightpanda-tool",
+  "name": "Lightpanda Tool",
+  "description": "Fast JS-aware page extraction via Lightpanda CLI for public browsing/extraction tasks.",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "command": { "type": "string" },
+      "defaultDump": { "type": "string", "enum": ["markdown", "html", "semantic_tree", "semantic_tree_text"] },
+      "defaultStripMode": { "type": "string" },
+      "defaultTimeoutMs": { "type": "number", "minimum": 1000 },
+      "maxOutputChars": { "type": "number", "minimum": 1000 }
+    }
+  }
+}
